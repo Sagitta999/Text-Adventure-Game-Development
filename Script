@@ -1,0 +1,431 @@
+###Introduction:
+#  This is a select game that you can choose what you want to do base on the situation, 
+#every choice you select will generate the different result and ending. There's no right
+#or wrong, it is just what you want to be. This game has 4 final endings.Every time you 
+#finish a ending I encourage you to play again to find out more, if the choice dosen't
+#lead you to the final result, you will be re-transported to the stage where you selected 
+#your inappropriate choice. Have fun!
+
+
+import time 
+
+def scapegoat():
+    time.sleep(2)
+    print(f"""\n<Trophy Achieved: Scapegoat!>""")
+    time.sleep(2)
+    print("""\nCongratulation! You finished the 'Scapegoat' line! However, we encourage you to play again to explore more ending! Wanna go?
+    
+    A.Yessss!
+    B.No...
+    
+    """)
+    answer9=input("")
+    answer9=answer9.lower()
+    if answer9=="a" or answer9=="yes!":
+        time.sleep(2)
+        print("Let's back to the beginning...")
+        round_1()
+    elif answer9=="b" or answer9=="no":
+        time.sleep(2)
+        print(f"""Thanks for your playing! {Your_name}!""")
+        
+    else: 
+        time.sleep(2)
+        print("Something went wrong...")
+
+
+
+
+def for_family():
+    time.sleep(2)
+    print(f"""\n<Trophy Achieved: For my family!>""")
+    time.sleep(2)
+    print("""\nCongratulation! You finished the 'For my family' line! However, we encourage you to play again to explore more ending! Wanna go?
+    
+    A.Yessss!
+    B.No...
+    
+    """)
+    answer8=input("")
+    answer8=answer8.lower()
+    if answer8=="a" or answer8=="yes!":
+        time.sleep(2)
+        print("Let's back to the beginning...")
+        round_1()
+    elif answer8=="b" or answer8=="no":
+        time.sleep(2)
+        print(f"""Thanks for your playing! {Your_name}!""")
+        
+    else: 
+        print("Something went wrong...")
+
+
+
+def evil_success():
+    time.sleep(2)
+    print(f"""\n<Trophy Achieved: Bad guy!>""")
+    time.sleep(2)
+    print("""\nCongratulation! You finished the 'Bad guy' line! However, we encourage you to play again to explore more ending! Wanna go?
+    
+    A.Yessss!
+    B.No...
+    
+    """)
+    answer5=input("")
+    answer5=answer5.lower()
+    if answer5=="a" or answer5=="yes!":
+        time.sleep(2)
+        print("Let's back to the beginning...")
+        round_1()
+    elif answer5=="b" or answer5=="no":
+        time.sleep(2)
+        print(f"""Thanks for your playing! {Your_name}!""")
+        
+    else: 
+        time.sleep(2)
+        print("Something went wrong...")
+        
+def justice_success():
+    time.sleep(2)
+    print(f"""\n<Trophy Achieved: Justice in my mind!>""")
+    time.sleep(2)
+    print("""\nCongratulation! You finished the 'Justice in my mind' line! However, we encourage you to play again to explore more ending! Wanna go?
+    
+    A.Yessss!
+    B.No...
+    
+    """)
+    answer6=input("")
+    answer6=answer6.lower()
+    if answer6=="a" or answer6=="yes!":
+        time.sleep(2)
+        print("Let's back to the beginning...")
+        round_1()
+    elif answer6=="b" or answer6=="no":
+        time.sleep(2)
+        print(f"""Thanks for your playing! {Your_name}!""")
+    
+    else:
+        time.sleep(2)
+        print("Something went wrong...")
+
+    
+def round_1():
+    time.sleep(2)
+    print(f'\nPhone: Detective {Your_name}, it is an emergency stituation, a man got murdered at 2140 Taylor Street, we need your help!')
+
+    time.sleep(2)
+    print("\nPhone: By the way, I think you have already meet Winston now, you will solve this problem with him this time.")
+    
+    a="A. I am on my way!"
+    b="B. It's Saturday night! Don't bother me!"
+    time.sleep(2)
+    answer1=input(f"What you gonna say? \n\n{a}\n{b}\n")
+    
+    if answer1 == "I am on my way!" or answer1 =='A' or answer1=='a':
+        time.sleep(2)
+        print(f"({Your_name} finished the last round and got in the car with Winston...)")
+        round_4()
+    elif answer1==("It's Saturday night! Don't bother me!") or answer1=='B' or answer1=='b':
+        time.sleep(2)
+        print(f"""\n (You hung up the phone and contiune drinking...Winston seems very disappointed,He doesn\'t undetstand why {Your_name} acted like this, but there\'s no time to waste, he went out the bar...)""")
+        round_2()
+        round_3()
+        
+    else:
+        time.sleep(2)
+        print("Something went wrong...")    
+    
+    
+
+def round_2():
+    time.sleep(2)
+    print("""\nYou got fired because of dereliction of duty...""")
+    time.sleep(2)
+    print("""\nNext day you received a phone call, the guy on the other end of the line required you to do something for him.""")
+    time.sleep(2)
+    print("""\nHe asked you for your prize...
+    
+    """)
+    
+    e="A.100k"
+    f="B.200k"
+    g="C.25k"
+    
+    answer3=input(f'How much money do you need? \n\n{e}\n{f}\n{g}\n')
+    answer3=answer3.lower()
+    if answer3=="100k" or answer3=="a": 
+        time.sleep(2)
+        print(f"""\n{Your_name}: 100K without negotiation!""")
+        time.sleep(2)
+        print("""\nMr.nobody: Deal! all you need to do is steal some files in police station and give it to me.""")
+    
+    elif answer3=="200k" or answer3=="b": 
+        time.sleep(2)
+        print(f"""\n{Your_name}: 200K without negotiation!""")
+        time.sleep(2)
+        print("""\nMr.nobody: Now you pissed me off...""")
+        time.sleep(2)
+        print("\n(Mr.nobody hung up the phone...)")
+        time.sleep(2)
+        print("\n(At night, as usual, you enter your favorite bar to get drunk.)") 
+        time.sleep(2)
+        print("(After 2 shots of vodka, someone stabbed you all of a sudden...)") 
+        fail_2()
+        
+    elif answer3=="25k" or answer3=="c":
+        time.sleep(2)
+        print(f"""\n{Your_name}: 25K.""")
+        time.sleep(2)
+        print("\nMr.nobody:It seems like you can't handle this job...")
+        time.sleep(2)
+        print("\n(Mr.nobody hung up the phone...)")
+        time.sleep(2)
+        print("\n(You just got fired and no source of income. However, all you care about is nothing but drinking and helling around...)")
+        time.sleep(2)
+        print("\nFinally, you become a hobo living on the street...")
+        time.sleep(2)
+        fail_2()
+    else:
+        time.sleep(2)
+        print("Something went wrong")
+        fail_2()
+        
+        
+def fail_2():
+    time.sleep(2)
+    print('\nYou are wasted!')
+    zz="A.Hell yes!"
+    zzz="B.No!"
+    AnswerZ=input(f"\nWould you like to play again? \n\n{zz}\n{zzz}\n ")
+    AnswerZ=AnswerZ.lower()
+    
+    if  AnswerZ=="yes" or AnswerZ=="hell yes!" or AnswerZ=="a":
+
+        time.sleep(3)
+        print("\nNow Loading...")
+
+        time.sleep(2)
+        print("\nLet's back to the beginning. Reminder: All your choice will cause different result and ending, you can play several times to see it. ")
+        round_2()
+
+    else:
+        print(f'\nThanks for your playing {Your_name}!')
+        
+
+def round_3():
+    time.sleep(3)
+    print("""\nNow you decided to work with criminal, you bribed guard and slipped into police station at a quite night..""")
+    time.sleep(3)
+    print("""\nWhen you successfully get in the police station, you have no idea where the files at, now you need to choose which room you need to go
+    
+    A.Sergeant's office
+    B.Evidence room
+    C.Detention room
+    """)
+
+    chance_round_3=2
+    while chance_round_3>0:
+        Answer4=input("Where you gonna search?")
+        Answer4=Answer4.lower()
+        if Answer4=="a":
+            time.sleep(2)
+            print("\nYou entered Sergeant's office. Unfortunately, there's no files in the room, you have to go another one...")
+            chance_round_3-=1
+        elif Answer4=="b":
+            time.sleep(2)
+            print("\nYou entered evidence room. Unfortunately, there's no files in the room, you have to go another one...")
+            chance_round_3-=1
+        elif Answer4=="c":
+            time.sleep(2)
+            print(f"""\nYou entered Detention room, there's one man stood there, holding files in hand...""")
+            time.sleep(2)
+            print(f"""\nUndercover: I have been waiting you for so long, {Your_name}.""")
+            time.sleep(2)
+            print("\nUndercover: I can't bring this files out. Otherwise, I will lose trust as a undercover in police station.""")
+            time.sleep(2)
+            print("\nUndercover: I need you to take this file out and give it to boss...")
+                  
+            break
+        else:
+            time.sleep(2)
+            print('something went wrong...')
+    if chance_round_3==0:
+        time.sleep(2)
+        print(f"""\nA brunch of police suddenly show up face to face while you were trying to find the files，you saw a familiar face in front of police...""")
+        time.sleep(2)
+        print(f"""\n{Your_name}: Winston?""")
+        time.sleep(2)
+        print("\nWinston: You are under arrest!")
+        
+        fail_3()
+        
+    elif chance_round_3!=0:
+        time.sleep(2)
+        print(f"""\nYou are out of police station with the files. Next day, you met Mr.nobody and give the files to him...""")
+        time.sleep(2)
+        print(f"\nMr.nobody: Well done {Your_name}! 100k dollar will be in your account right away!")
+        time.sleep(2)
+        print("(You opened the notification on your phone, there's 100K dollar were transffered into your bank account...)")
+        evil_success()
+
+
+def fail_3():
+    time.sleep(2)
+    print('You are wasted!')
+    zz="A.Hell yes!"
+    zzz="B.No!"
+    AnswerZ=input(f"Would you like to play again? \n\n{zz}\n{zzz}\n ")
+    AnswerZ=AnswerZ.lower()
+    
+    if  AnswerZ=="yes" or AnswerZ=="hell yes!" or AnswerZ=="a":
+
+        time.sleep(3)
+        print("Now Loading...")
+
+        time.sleep(2)
+        print("Let's back to the beginning. Reminder: All your choice will cause different result and ending, you can play several times to see it. ")
+        round_3()
+
+    else:
+        time.sleep(2)
+        print(f'Thanks for your playing {Your_name}!')
+        #exit(0)
+
+def round_4():
+    time.sleep(2)
+    print(f"""\n(When {Your_name} and Winston drove past a gas station, Winston find that 2 people with guns are robbing convenience store...)""")
+    time.sleep(3)
+    print(f"""\nWinston: Detective {Your_name}! We need to trun round and stop them!
+
+    """)
+    
+    c="A. Let's teach them some lessons!"
+    d="B. We got more serious job to do..."
+    
+    answer2=input(f'Now you need to choose to turn round or leave it \n\n{c}\n{d}\n')
+    if answer2 =="A" or answer2 == "I am on my way!" or answer2 =="a":
+            time.sleep(2)
+            print(f"""\n{Your_name}: Let's teach them some lessons!""")
+            time.sleep(2)
+            print("\n(You and Winston turned back to the gas station, when you looked at one of robbers, you realized that it's your brother because he had the same tattoo in his left arm...)")
+            time.sleep(4)
+            print(f"\n{Your_name}:Why did you do such a stupid thing! Brother!")
+            time.sleep(2)
+            print(f"\n{Your_name}'s brother: Oh! It's you {Your_name}!")
+            time.sleep(2)
+            print("\n(Meanwhile, your brother's partner quitely close to Winston when you and Winston were paying attention to your brother, he rapidly seized Winston on both sides by his pistol...)")
+            time.sleep(4)
+            print("""\nYou have a pistrol as well, what you gonna do?...
+            
+            \nA. Point your gun to your brother to negotiate
+            \nB. Shoot your brother's partner
+            \nC. Get away to find reinforcement         
+            
+            """)
+            
+            chance_round_4=2
+            while chance_round_4>0:
+                answer7=input("")
+                answer7=answer7.lower()
+                if answer7=="a":
+                    time.sleep(2)
+                    print("\n(That might be an good idea...)")
+                    break
+                elif answer7=="b":
+                    chance_round_4-=1
+                    time.sleep(2)
+                    print("\n(That will put Winston into danger, please think about another way out...)")
+                elif answer7=="c":
+                    time.sleep(2)
+                    print("\n(It could be dangerous to run away, especially they have a pistol, please think about another way out...)")
+                    chance_round_4-=1
+                else:
+                    print("\nSomething went wrong...")
+            
+            if chance_round_4==0:
+                time.sleep(2)
+                print(f"""\nYou were wasting too much time，your brother's partner shot Winston, he pointed his gun to you and ready to shoot...""")
+                time.sleep(2)
+                print("\n(Suddenly your brother shot his partner down...)")
+                time.sleep(2)
+                print(f"\n{Your_name}'s brother: I can't put my family in danger...")
+                time.sleep(2)
+                print("\n(You and your brother went out the convenience store, decided to drive to Canada and hide...)")
+                
+
+                for_family()
+            elif chance_round_4!=0:
+                time.sleep(2)
+                print(f"""\n(You pointed your gun to your brother...)""")
+                time.sleep(2)
+                print(f"""\n{Your_name}'s brother: You are not gonna shoot me, aren't you?""")
+                time.sleep(2)
+                print(f"""\n{Your_name}:......""")
+                time.sleep(2)
+                print("""\n(Now you have to choose...)
+                
+                \nA. Shoot your brother
+                \nB. Shoot another robber even though putting Winston in danger
+        
+                """)
+                answer10=input(" ")
+                answer10=answer10.lower()
+                if answer10=="a":
+                    time.sleep(2)
+                    print("""\n(You shot your brother, Winston got rid of robber immediately, rob his gun and put the trigger...""")
+                    time.sleep(2)
+                    print("\nAfter all this happened, you just sit on the ground until the sun rose up...)""")
+                    
+                    justice_success()
+                elif answer10=="b":
+                    time.sleep(2)
+                    print(f"""\n(You shot your brother's partner that led to the dead of Winston. You looked at your brother, think about that It's been a while that you don't have a drink with your brother, you decided to drive to Canada with your brother and hide... )
+                    
+                    """)
+                    for_family()
+                else:
+                    time.sleep(2)
+                    print("Something went wrong...")
+    
+    
+    
+    elif answer2 =="B" or answer2 == "We got more serious job to do..." or answer2 =="b":
+        time.sleep(2)
+        print(f"""\n(You stood by and let this happened...)""")
+        time.sleep(2)
+        print("""\n(When you and Winston arrived crime scene, you found something wrong...)""")
+        time.sleep(2)
+        print("\n(There are some of your belongings in the crime scene. However, it's too late, Winston commanded some police to arrest you...)""")
+        
+            
+        scapegoat()
+    else:
+        time.sleep(2)
+        print("\nSomething went wrong...")
+    
+    
+       
+print("You are a detective in SFPD who always be passionate on keeping public security in San Francisco. You decide to have some drink on a wonderful Saturday night. Until someone enter the bar and sit next to you...\n")
+
+time.sleep(2)
+print('\nMan: It\'s good to see you here detective, I am Winston, your new assistant. May I have your name?')
+
+time.sleep(2)
+Your_name=input(prompt='\nYou: Nice to meet you Winston,my name is ')
+
+time.sleep(2)
+print('\n(Suddenly, your phone\'s ringtone interrupts your conversation, you pick up your phone...)')
+
+round_1()
+
+
+
+
+
+
+
+
+
+
+
